@@ -1,0 +1,19 @@
+{
+  "name": "link-buddy",
+  "description": "A Flask app to manage links",
+  "scripts": {
+    "test": "pytest"  // Adjust this to your test command
+  },
+  "env": {
+    "FLASK_ENV": "test"
+  },
+  "formation": {
+    "test": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev" // If you're using a database
+  ]
+}
